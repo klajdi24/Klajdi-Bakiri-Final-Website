@@ -1,81 +1,163 @@
-.title{
-    font-family: monospace;
-    text-align: center;
-    color: beige;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
 }
-
-body{
-    background-color: rgb(9, 9, 149);
-}
-p {
-    font-family: monospace;
-    text-align: center;
-    color: beige;
-
-}
-h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size: 100px;
-    color: azure;
-}
-h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    color: rgb(51, 207, 207);
-}
-a{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    color:white;
-}
-.p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 30px;
-text-align: left;
-
-}
-button{
-    border: solid;
-    border-radius: 5px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
-
-
-}
-button:hover{
-    background-color: rgb(250, 232, 33);
-    color:blue
-}
-footer{
-    background-color: #1c2331; /* Dark blue footer background color */
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
 
 .text-box {
-    border: 2px solid #ccc; 
-    padding: 2px; 
-    border-radius: 4px; 
-    margin: 7px; 
-}
-.contents{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 30px;
-    text-align: left;
-
-}
-.container {
-    max-width: 800px;
-    margin: 40px auto;
+    text-align: center;
     padding: 20px;
-    background-color: #112240; /* Dark blue content background color */
-    border-radius: 8px;
-  }
-  .flexbox{
-    margin-bottom: 50px ;
-  }
+    background-color: #f4f4f4;
+}
+
+h1, p {
+    margin: 0;
+    color: #3498db; 
+    font-family: 'Helvetica', sans-serif;
+}
+h2 {
+    color: #3498db; 
+    font-size: 28px; 
+    margin-bottom: 12px; 
+    
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contents {
+    background-color:aqua;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.contents p {
+    color: #060202; 
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+button {
+    margin: 5px;
+    padding: 12px 24px; 
+    font-size: 18px; 
+    background-color: #3498db; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+button:hover {
+    background-color: #2980b9; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.image-description {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 20px;
+}
+
+footer {
+    
+        text-align: center;
+        padding: 20px;
+        background-color: #222; 
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum and maximum width */
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .image-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+        text-align: center;
+        height: 100%; /* Fill the height of the container */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Space evenly within the image card */
+    }
+    
+    .image-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .image-card h3 {
+        font-size: 24px; /* Increase the font size of the heading */
+        margin-bottom: 10px;
+    }
+    
+    .image-card p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+    }
+
+        .image-description {
+            font-size: 14px;
+            color: #666;
+        }
+        .reflective-section {
+            background-color: #f9f9f9; /* Light Gray Background Color */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .reflective-section h2 {
+            color: #3498db; /* Blue Header Text Color */
+        }
+        
+        .reflective-section p {
+            color: #333; /* Dark Gray Text Color */
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        
